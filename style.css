@@ -2,13 +2,14 @@
 
 :root {
     --branco: white;
-    --cor-de-fundo: #00162E;
-    --fundo-senha: #00244D;
-    --fundo-texto: #001E40;
-    --borda: #0075FF;
+    --cor-de-fundo: #002e2a;
+    --fundo-senha: #27554f;
+    --fundo-texto: #00403b;
+    --borda: #00ffb3;
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
+
 * {
     font-weight: 400;
 }
@@ -98,6 +99,7 @@ body {
     font-size: 24px;
     cursor: pointer;
 }
+
 .parametro-senha__texto {
     padding: 24px;
     border-top: 2px solid var(--borda);
@@ -106,29 +108,44 @@ body {
     font-size: 24px;
 }
 
-label{
+label {
     font-size: 20px;
 }
 
-.checkbox{
+.checkbox {
     width: 20px;
     height: 20px;
     cursor: pointer;
 }
 
-.barra{
+.barra {
     background-color: var(--fundo-senha);
     height: 30px;
     width: 100%;
 }
-.fraca{
+
+.forca {
     height: 30px;
-    width: 25%;
-    background-color: #E71B32;
     position: relative;
     bottom: 30px;
 }
-.parametro-senha-textos{
+
+.fraca {
+    width: 25%;
+    background-color: #E71B32;
+}
+
+.media {
+    background-color: #FAF408;
+    width: 50%;
+}
+
+.forte {
+    background-color: #00FF85;
+    width: 100%;
+}
+
+.parametro-senha-textos {
     display: flex;
     justify-content: space-between;
 }
@@ -138,4 +155,9 @@ label{
     .parametro-coluna__senha {
         flex-direction: row;
     }
+}
+
+img {
+    width: 45px;
+    height: 45px;
 }
